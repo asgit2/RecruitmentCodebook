@@ -1,0 +1,14 @@
+SELECT
+    first_name,
+    last_name
+FROM players
+WHERE ppg >= 20.0
+  AND rpg >= 5.0
+  AND apg >= 5.0
+  AND games_played >= 65
+ORDER BY last_name ASC, first_name ASC;
+
+UPDATE product_category
+SET description = 'The ' || name || ' category'
+WHERE description IS NULL;
+
